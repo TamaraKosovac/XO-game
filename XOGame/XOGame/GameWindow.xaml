@@ -1,0 +1,63 @@
+﻿<Window x:Class="XOGame.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="XOGame" Height="700" Width="900"
+        Icon="/Images/logo.ico"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid x:Name="GameGrid" Background="{StaticResource GridBackground}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" Margin="{StaticResource TextMargin}">
+            <TextBlock x:Name="StatusText"
+               FontSize="{StaticResource ButtonFontSize}"
+               FontWeight="Bold"
+               VerticalAlignment="Center"/>
+
+            <TextBlock x:Name="TimerText"
+               FontSize="{StaticResource ButtonFontSize}"
+               Foreground="{StaticResource TextForeground}"
+               VerticalAlignment="Center"
+               Margin="{StaticResource TextMargin}"
+               Text="⏱ 00:00"/>
+        </StackPanel>
+
+        <UniformGrid Rows="3" Columns="3"
+                     Grid.Row="1"
+                     x:Name="BoardGrid"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                     MaxWidth="{StaticResource MaxWidth}" MaxHeight="{StaticResource MaxHeight}"
+                     Margin="{StaticResource StackPanelMarginFirst}"/>
+        <StackPanel Grid.Row="2"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Margin="{StaticResource StackPanelMarginSecond}">
+            <Button Width="{StaticResource ButtonWidth}" Height="{StaticResource ButtonHeight}" Click="Restart_Click"
+                    Margin="{StaticResource ButtonMargin}"
+                    Background="{StaticResource ButtonBackgroundColor}"
+                    Style="{StaticResource MaterialDesignFlatButton}"
+                    materialDesign:ButtonAssist.CornerRadius="20">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <materialDesign:PackIcon Kind="Restart" Width="{StaticResource IconWidth}" Height="{StaticResource IconHeight}" Margin="{StaticResource BottomMenuMargin}"/>
+                    <TextBlock VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button Width="{StaticResource ButtonWidth}" Height="{StaticResource ButtonHeight}" Click="Back_Click"
+                    Margin="{StaticResource ButtonMargin}"
+                    Background="{StaticResource ButtonBackgroundColor}"
+                    Style="{StaticResource MaterialDesignFlatButton}"
+                    materialDesign:ButtonAssist.CornerRadius="20">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <materialDesign:PackIcon Kind="ArrowLeft" Width="{StaticResource IconWidth}" Height="{StaticResource IconHeight}" Margin="{StaticResource BottomMenuMargin}"/>
+                    <TextBlock VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

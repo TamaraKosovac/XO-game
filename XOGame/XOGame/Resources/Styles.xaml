@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <SolidColorBrush x:Key="ButtonBackgroundColor" Color="LightPink"/>
+    <SolidColorBrush x:Key="GridBackground" Color="LightGray"/>
+    <SolidColorBrush x:Key="TextForeground" Color="DarkSlateGray"/>
+    <sys:Double x:Key="ButtonFontSize">20</sys:Double>
+    <sys:Double x:Key="TitleFontSize">26</sys:Double>
+    <Thickness x:Key="TextMargin">10</Thickness>
+    <Thickness x:Key="ButtonMargin">20</Thickness>
+    <Thickness x:Key="BottomMenuMargin">0,0,8,0</Thickness>
+    <Thickness x:Key="StackPanelMarginFirst">0,10,0,10</Thickness>
+    <Thickness x:Key="StackPanelMarginSecond">0,10,0,0</Thickness>
+    <Thickness x:Key="TitleMargin">0,0,0,40</Thickness>
+    <sys:Double x:Key="IconWidth">24</sys:Double>
+    <sys:Double x:Key="IconHeight">24</sys:Double>
+    <sys:Double x:Key="PlayIconHeight">30</sys:Double>
+    <sys:Double x:Key="PlayIconWidth">30</sys:Double>
+    <sys:Double x:Key="ButtonWidth">120</sys:Double>
+    <sys:Double x:Key="ButtonHeight">40</sys:Double>
+    <sys:Double x:Key="MaxWidth">500</sys:Double>
+    <sys:Double x:Key="MaxHeight">500</sys:Double>
+    <sys:Double x:Key="MusicButtonWidth">60</sys:Double>
+    <sys:Double x:Key="MusicButtonHeight">60</sys:Double>
+    <sys:Double x:Key="PlayButtonWidth">300</sys:Double>
+    <sys:Double x:Key="PlayButtonHeight">100</sys:Double>
+    <sys:Double x:Key="PlayerButtonWidth">200</sys:Double>
+    <sys:Double x:Key="PlayerButtonHeight">50</sys:Double>
+
+</ResourceDictionary>
